@@ -110,4 +110,51 @@ Classical and Tabular Q Learning
 
 OpenAI Gym:
 
+Keras-Rl2
+
+DQN:
+RL + CNN
+
+Learning thru self play not analyzing history.
+
+Policy: Learn using NN.
+
+Value NN:
+    Taking in observations/state.
+    Pass observations and return values.
+    Input layer as same number of inputs as observation.
+    Output layer is number of values needed for actual grid.
+    When it sees observations it start building these observations are similar to other observations we have seen in the past.
+    NN estimate observation to come up with estimated values.
+    Key ideas is if two state similar then their values are also similar.
+
+    Compare the past situations that are similar to come up with action to take in the new situation.
+
+    This NN is just producting values not telling us what actions to take.
+
+    Mapping out values to the env given input of observation.
+
+    Taking in observaations from the past and using that to estimate values.
+
+    Value NN: is used to estimate values.
+
+Policy NN:
+    Policy decide which action to take.  We will deal with stochastic policy.  We have probability for each neuron in the output layer.
+
+    Each neuron will have probabilist outcome of which action to take.
+    Probability for each state.
+    Policy for similar state.
+
+
+We will build 2 linked but separate NN.  Link these by assigning them same weights.
+
+Exploitation and Exploration Tradeoff
+
+
+
+
+
+
+
+
 
